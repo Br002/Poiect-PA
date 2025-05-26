@@ -319,12 +319,12 @@ int main(int argc, char **argv){
             else if (strstr(line, " f"))
                 {
                 fprintf(output, "%s ", line);
-                find_f_otp(&flag, line, output);/////nu vrea
+                find_flag_opt(&flag, line, output);/////nu vrea
                 }
             else if (strstr(line, " o"))
                 {
                 fprintf(output, "%s ", line);
-                find_f_otp(&option, line, output);//nu vrea
+                find_flag_opt(&option, line, output);//nu vrea
                 }
         }
 
