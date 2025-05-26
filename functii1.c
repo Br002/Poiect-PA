@@ -77,7 +77,7 @@ void farg(char *s, ARG **cap){
   }
 }
 
-void find_f_otp(ARG **cap, char* s, FILE* f) 
+void find_flag_opt(ARG **cap, char* s, FILE* f) 
 {
 
   if (*cap == NULL) 
