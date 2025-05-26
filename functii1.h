@@ -28,7 +28,7 @@ char* is_short(const char* s);
 void opt(char* s1, const char*s2, ARG **opt);
 void farg(char *s, ARG **cap);
 void find_arg(ARG **cap, FILE* f);
-void find_f_otp(ARG **cap, char* s, FILE* f);
+void find_flag_opt(ARG **cap, char* s, FILE* f);
 void free_list(ARG *cap);
 
 
