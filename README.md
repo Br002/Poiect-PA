@@ -22,5 +22,43 @@ A fost necesara si utilizarea `Git`/`GitHub` pentru a salva multiple variante al
 
 
  ## Structura
- Proiectul are ca si cerinte principale 4 taskuri , fiecare avand nevoie de 
+ Proiectul are ca si cerinte principale 4 taskuri , fiecare avand nevoie de o noua apropiere cat si de debugging intens pentru ca lucrurile nu merg niciodata asa cum vrei.
+
+ 
+
+
+# Prezentare sumativa
+
+## Task 1
+Structuri si functii
+```c
+struct param_arg 
+{
+    char tip;
+    void* val;
+    char arg_tip;
+    char *id;
+};
+typedef struct param_arg Data;
+
+struct arg 
+{
+    Data data;
+    struct arg* next;
+};
+typedef struct arg ARG;
+
+//void printlist(void **cap); // pt verificari
+void add_arg(ARG **cap, char* nval);
+void pushopt(ARG **cap, char* nval, int nr);
+void pushflag(ARG **cap, char* dval);
+char* is_long(const char* s);
+char* is_short(const char* s);
+void opt(char* s1, const char*s2, ARG **opt);
+void farg(char *s, ARG **cap);
+void find_arg(ARG **cap, FILE* f);
+void find_flag_opt(ARG **cap, char* s, FILE* f);
+void free_list(ARG *cap);
+
+```
  
