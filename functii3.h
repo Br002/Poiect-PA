@@ -38,5 +38,5 @@ STACK*    dfs_stack(Node3 *root, const char *target_fullpath);
 
 
 void createroot(Node3** root, char* d);
-void adoptchild(Node3* root, char* d);
+void addchild(Node3* root, char* d);
 void free_tree(Node3* root);
