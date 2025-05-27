@@ -10,7 +10,7 @@
         (*root)->child_no = 0;
     }
 
-    void adoptchild(Node3* root, char* d) {
+    void addchild(Node3* root, char* d) {
         root->child_no++;
         root->next = (Node3**)realloc(root->next, root->child_no * sizeof(Node3*));
         createroot(&root->next[root->child_no - 1], d);
